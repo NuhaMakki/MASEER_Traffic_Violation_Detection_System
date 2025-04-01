@@ -37,14 +37,18 @@
 ## 🚦 Detected Traffic Violations  
 Maseer focuses on detecting and identifying **traffic priority violations**, specifically **sudden lane change violations**. This violation occurs when a driver **fails to yield to a vehicle already in the target lane** while switching lanes, creating a hazardous situation. The violation is characterized by:
 
-🚗 **A vehicle attempting to switch lanes without yielding to a vehicle already in that lane**, causing potential accidents.  
-📏 **A minimum safe distance of three meters is not maintained** between vehicles, leading to unsafe conditions.  
+🚗 **A vehicle (🔴 red) attempting to switch lanes without yielding to a vehicle (🔵 blue) already in that lane**, causing potential accidents.  
+📏 **A minimum safe distance of three meters is not maintained**, leading to unsafe conditions.  
 ⚠️ **Sudden and reckless lane changes** disrupt traffic flow and increase accident risks.  
-<p align="center"> <img src="Maseer_img/LaneChange.png" width="80%" alt="Benchmarking Analysis"> </p>
-<p align="center"> <img src="Maseer_img/LaneChange2.png" width="80%" alt="Benchmarking Analysis"> </p>
-<p align="center"> <img src="Maseer_img/LaneChange3.png" width="80%" alt="Benchmarking Analysis"> </p>
 
-Further explanation of this violation is illustrated in above figure. In this scenario, **Vehicle A** holds priority in its current lane. If **Vehicle B** intends to switch to the left lane, it must wait for **Vehicle A** to pass before changing lanes. A violation occurs if **Vehicle B** does not yield, cuts too closely in front of **Vehicle A**, and disrupts its passage—placing both vehicles at risk.
+<p align="center">  
+  <img src="Maseer_img/LaneChange3.png" width="70%" alt="Sudden Lane Change Violation">  
+</p>
+
+In the figure above:  
+- The **🔵 blue vehicle holds priority** in its current lane.  
+- The **🔴 red vehicle violates priority** if it switches lanes without waiting for the blue vehicle to pass.  
+- A violation occurs if the red vehicle **cuts too closely in front**, disrupting the blue vehicle’s passage and increasing accident risk.  
 
 
 
