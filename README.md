@@ -1,7 +1,7 @@
 # 🚦 Maseer (مسير) - Intelligent Traffic Violation Detection System
 
 
-<p align="center"> <img src="Maseer_img/logo1.png" width="80%" alt="Benchmarking Analysis"> </p>
+<p align="center"> <img src="Maseer_img/logo1.png" width="95%" alt="Benchmarking Analysis"> </p>
 
 ## 📖 Table of Contents  
 
