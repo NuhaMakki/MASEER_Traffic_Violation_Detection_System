@@ -42,6 +42,7 @@ Maseer focuses on detecting and identifying **traffic priority violations**, spe
 ⚠️ **Sudden and reckless lane changes** disrupt traffic flow and increase accident risks.  
 <p align="center"> <img src="Maseer_img/LaneChange.png" width="80%" alt="Benchmarking Analysis"> </p>
 <p align="center"> <img src="Maseer_img/LaneChange2.png" width="80%" alt="Benchmarking Analysis"> </p>
+<p align="center"> <img src="Maseer_img/LaneChange3.png" width="80%" alt="Benchmarking Analysis"> </p>
 
 Further explanation of this violation is illustrated in above figure. In this scenario, **Vehicle A** holds priority in its current lane. If **Vehicle B** intends to switch to the left lane, it must wait for **Vehicle A** to pass before changing lanes. A violation occurs if **Vehicle B** does not yield, cuts too closely in front of **Vehicle A**, and disrupts its passage—placing both vehicles at risk.
 
