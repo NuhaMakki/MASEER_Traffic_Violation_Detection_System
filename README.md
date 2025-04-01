@@ -5,7 +5,7 @@
 
 ## 📖 Table of Contents  
 
-- [Introduction](#introduction)  
+- [Introduction](##introduction)  
 - [Detected Traffic Violations](#detected-traffic-violations)  
 - [Detection Process](#detection-process)  
 - [Models & Techniques Used](#models--techniques-used)  
