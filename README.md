@@ -23,13 +23,30 @@
 ## 📌 Introduction  
 
 ### 🚀 Overview
-Maseer is an AI-powered solution designed to automate the detection and identification of traffic priority violations using video footage from regular drivers' Dashcams. By leveraging computer vision and machine learning, Maseer processes Dashcam recordings to identify specific traffic violations, addressing gaps in traditional traffic monitoring systems. This approach enhances road safety and empowers drivers to contribute to law enforcement efforts, streamlining violation reporting while protecting their rights.
+**Maseer** is an **AI-powered solution** designed to **automate** the detection and identification of **traffic priority violations** using video footage from regular drivers' **Dashcams**. By leveraging **computer vision** and **machine learning**, Maseer processes Dashcam recordings to **identify specific traffic violations**, addressing gaps in **traditional traffic monitoring systems**. This approach enhances **road safety** and **empowers drivers** to contribute to **law enforcement efforts**, streamlining **violation reporting** while protecting their **rights**.
 
 ### 🎯 Objectives
 ✅ **Leverage Dashcam footage** → Minimize the need for physical traffic police presence.  
 ✅ **Automate violation detection** → Reduce the workload for both Dashcam owners and traffic authorities.  
 ✅ **Facilitate data-driven reporting** → Assist victims of priority violations in filing accurate reports.  
 ✅ **Enhance traffic management** → Utilize advanced technology for precise and efficient violation monitoring.  
+
+
+
+
+## 🚦 Detected Traffic Violations  
+Maseer focuses on detecting and identifying **traffic priority violations**, specifically **sudden lane change violations**. This violation occurs when a driver **fails to yield to a vehicle already in the target lane** while switching lanes, creating a hazardous situation. The violation is characterized by:
+
+🚗 **A vehicle attempting to switch lanes without yielding to a vehicle already in that lane**, causing potential accidents.  
+📏 **A minimum safe distance of three meters is not maintained** between vehicles, leading to unsafe conditions.  
+⚠️ **Sudden and reckless lane changes** disrupt traffic flow and increase accident risks.  
+<p align="center"> <img src="Maseer_img/LaneChange.png" width="95%" alt="Benchmarking Analysis"> </p>
+
+Further explanation of this violation is illustrated in above figure. In this scenario, **Vehicle A** holds priority in its current lane. If **Vehicle B** intends to switch to the left lane, it must wait for **Vehicle A** to pass before changing lanes. A violation occurs if **Vehicle B** does not yield, cuts too closely in front of **Vehicle A**, and disrupts its passage—placing both vehicles at risk.
+
+
+
+
 
 
 
@@ -69,8 +86,7 @@ Maseer is an AI-powered solution designed to automate the detection and identifi
 - [License](#license)  
   - Information about the project’s license.
 
-## 📌 Introduction  
-Maseer is an advanced traffic violation detection system that leverages computer vision and deep learning to automatically detect and report traffic violations. By analyzing video footage, Maseer can identify violations such as red light running, illegal parking, and wrong-way driving.  
+
 
 🚀 **Key Technologies:**  
 - **Computer Vision** (OpenCV, image processing techniques)  
@@ -79,19 +95,6 @@ Maseer is an advanced traffic violation detection system that leverages computer
 
 ---
 
-## 🚦 Detected Traffic Violations  
-Maseer is designed to detect multiple traffic violations, including:  
-
-1. **Red Light Violation** 🚨  
-   - Vehicles crossing an intersection after the light turns red.  
-2. **Illegal Parking** 🚗  
-   - Detecting parked cars in restricted zones.  
-3. **Wrong-Way Driving** 🔄  
-   - Vehicles moving against the permitted direction.  
-4. **Speeding (Future Work)** ⚡  
-   - Identifying vehicles exceeding the speed limit.  
-
-Each violation is detected using object tracking, lane detection, and rule-based logic to ensure accuracy.  
 
 ---
 
