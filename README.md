@@ -1,6 +1,41 @@
-# Maseer: Intelligent Traffic Violation Detection System  
+# 🚦 Maseer (مسير) - Intelligent Traffic Violation Detection System
 
 ## 📖 Table of Contents  
+
+- [Introduction](#introduction)  
+- [Detected Traffic Violations](#detected-traffic-violations)  
+- [Detection Process](#detection-process)  
+- [Models & Techniques Used](#models--techniques-used)  
+- [Sample Output](#sample-output)  
+- [Back-End Implementation](#back-end-implementation)  
+- [Installation & Setup](#installation--setup)  
+- [How to Use](#how-to-use)  
+- [Testing & Results](#testing--results)  
+- [Directory Structure](#directory-structure)  
+- [Challenges & Future Enhancements](#challenges--future-enhancements)  
+- [Contributors & Acknowledgments](#contributors--acknowledgments)  
+- [License](#license)  
+
+
+## 📌 Introduction  
+
+### 🚀 Overview
+Maseer is an AI-powered solution designed to automate the detection and identification of traffic priority violations using video footage from regular drivers' Dashcams. By leveraging computer vision and machine learning, Maseer processes Dashcam recordings to identify specific traffic violations, addressing gaps in traditional traffic monitoring systems. This approach enhances road safety and empowers drivers to contribute to law enforcement efforts, streamlining violation reporting while protecting their rights.
+
+### 🎯 Objectives
+✅ **Leverage Dashcam footage** → Minimize the need for physical traffic police presence.  
+✅ **Automate violation detection** → Reduce the workload for both Dashcam owners and traffic authorities.  
+✅ **Facilitate data-driven reporting** → Assist victims of priority violations in filing accurate reports.  
+✅ **Enhance traffic management** → Utilize advanced technology for precise and efficient violation monitoring.  
+
+## 🛠️ Technologies Used
+- 🔍 **Computer Vision** (OpenCV, YOLO)  
+- 🧠 **Machine Learning** (TensorFlow, PyTorch)  
+- 🏎️ **Video Processing** (FFmpeg)  
+- 🗄️ **Database** (MySQL, Firebase)  
+- 🌐 **Web Framework** (Flask, FastAPI)
+
+
 
 - [Introduction](#introduction)  
   - Overview of the project, its objectives, and key features.
@@ -28,9 +63,6 @@
   - Recognition of contributors and relevant credits.
 - [License](#license)  
   - Information about the project’s license.
-
-
-
 
 ## 📌 Introduction  
 Maseer is an advanced traffic violation detection system that leverages computer vision and deep learning to automatically detect and report traffic violations. By analyzing video footage, Maseer can identify violations such as red light running, illegal parking, and wrong-way driving.  
