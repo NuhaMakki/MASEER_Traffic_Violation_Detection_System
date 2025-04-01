@@ -20,6 +20,73 @@
 - [License](#license)  
 
 
+
+## 📖 Table of Contents  
+
+📌 [Introduction](#introduction)  
+🚦 [Detected Traffic Violations](#detected-traffic-violations)  
+🔍 [Detection Process](#detection-process)  
+🧠 [Models & Techniques Used](#models--techniques-used)  
+📊 [Sample Output](#sample-output)  
+💾 [Back-End Implementation](#back-end-implementation)  
+⚙️ [Installation & Setup](#installation--setup)  
+📝 [How to Use](#how-to-use)  
+📈 [Testing & Results](#testing--results)  
+📂 [Directory Structure](#directory-structure)  
+🚀 [Challenges & Future Enhancements](#challenges--future-enhancements)  
+🤝 [Contributors & Acknowledgments](#contributors--acknowledgments)  
+📜 [License](#license)  
+
+
+## 📖 Table of Contents  
+
+| 📌 [Introduction](#introduction)  | 🚦 [Traffic Violations](#detected-traffic-violations)  | 🔍 [Detection Process](#detection-process)  |
+|----------------------|----------------------|----------------------|
+| 🧠 [Models & Techniques](#models--techniques-used) | 📊 [Sample Output](#sample-output) | 💾 [Back-End](#back-end-implementation) |
+| ⚙️ [Installation & Setup](#installation--setup) | 📝 [How to Use](#how-to-use) | 📈 [Testing & Results](#testing--results) |
+| 📂 [Directory Structure](#directory-structure) | 🚀 [Challenges & Future](#challenges--future-enhancements) | 🤝 [Contributors](#contributors--acknowledgments) |
+| 📜 [License](#license) | | |
+
+
+## 📖 Table of Contents  
+
+<details>
+  <summary>📌 Introduction</summary>
+  <ul>
+    <li><a href="#introduction">Overview</a></li>
+    <li><a href="#detected-traffic-violations">Traffic Violations</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>🚦 Detection & Models</summary>
+  <ul>
+    <li><a href="#detection-process">Detection Process</a></li>
+    <li><a href="#models--techniques-used">Models & Techniques</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>💾 Implementation & Usage</summary>
+  <ul>
+    <li><a href="#back-end-implementation">Back-End Implementation</a></li>
+    <li><a href="#installation--setup">Installation & Setup</a></li>
+    <li><a href="#how-to-use">How to Use</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>📂 Other</summary>
+  <ul>
+    <li><a href="#testing--results">Testing & Results</a></li>
+    <li><a href="#directory-structure">Directory Structure</a></li>
+    <li><a href="#challenges--future-enhancements">Challenges & Enhancements</a></li>
+    <li><a href="#contributors--acknowledgments">Contributors</a></li>
+    <li><a href="#license">License</a></li>
+  </ul>
+</details>
+
+
 ## 📌 Introduction  
 
 ### 🚀 Overview
