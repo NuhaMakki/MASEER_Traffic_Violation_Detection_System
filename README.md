@@ -1,15 +1,34 @@
 # Maseer: Intelligent Traffic Violation Detection System  
 
 ## 📖 Table of Contents  
-- [Introduction](#-introduction)  
-- [Detected Traffic Violations](#-detected-traffic-violations)  
-- [How Detection Works](#-how-detection-works)  
-- [Models Used](#-models-used)  
-- [Generated Output](#-generated-output)  
-- [Installation & Usage](#-installation--usage)  
-- [Testing & Evaluation](#-testing--evaluation)  
-- [Challenges & Future Improvements](#-challenges--future-improvements)  
-- [Contributors & Acknowledgments](#-contributors--acknowledgments)  
+
+- [Introduction](#introduction)  
+  - Overview of the project, its objectives, and key features.
+- [Detected Traffic Violations](#detected-traffic-violations)  
+  - List of traffic violations detected (e.g., speeding, red light running, etc.).
+- [Detection Process](#detection-process)  
+  - Explanation of how traffic violations are detected (step-by-step).
+- [Models & Techniques Used](#models--techniques-used)  
+  - Overview of the models (e.g., YOLOv8, license plate detection) and methods used for detection.
+- [Sample Output](#sample-output)  
+  - Example results, including images or videos of detected violations.
+- [Back-End Implementation](#back-end-implementation)  
+  - Details on how the backend is structured and the technologies used.
+- [Installation & Setup](#installation--setup)  
+  - Steps to install and configure the project.
+- [How to Use](#how-to-use)  
+  - Instructions on running the system and interpreting results.
+- [Testing & Results](#testing--results)  
+  - Performance metrics and results of system testing.
+- [Directory Structure](#directory-structure)  
+  - Overview of the project’s folder organization and key files.
+- [Challenges & Future Enhancements](#challenges--future-enhancements)  
+  - Discussion of current limitations and potential improvements.
+- [Contributors & Acknowledgments](#contributors--acknowledgments)  
+  - Recognition of contributors and relevant credits.
+- [License](#license)  
+  - Information about the project’s license.
+
 
 
 
