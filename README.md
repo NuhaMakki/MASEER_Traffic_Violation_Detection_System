@@ -10,15 +10,8 @@
 - [Detection Process](#detection-process)  
 - [System Testing](#system-testing)  
 - [Sample Output](#sample-output)  
-- [Back-End Implementation](#back-end-implementation)  
 - [Installation & Setup](#installation--setup)  
-- [How to Use](#how-to-use)  
-- [Testing & Results](#testing--results)  
-- [Directory Structure](#directory-structure)  
-- [Challenges & Future Enhancements](#challenges--future-enhancements)  
-- [Contributors & Acknowledgments](#contributors--acknowledgments)  
-- [License](#license)  
-
+- [Future Enhancements](#future-enhancements)  
 
 
 ## 📖 Table of Contents  
