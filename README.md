@@ -119,6 +119,102 @@ In the figure above:
 
 
 
+## 🔍 Detection Process  
+
+The process of analyzing videos to identify and extract data related to sudden lane change violations comprises **two primary phases**, as illustrated below.
+
+<p align="center">  
+  <img src="Maseer_img/process.png" width="70%" alt="Detection Process">  
+</p>
+
+### 🚘 1️⃣ Violation Detection  
+This phase involves:  
+✅ **Vehicle Detection & Tracking**: Uses **YOLOv8n** for vehicle detection and **SORT** algorithm for tracking objects across frames.  
+✅ **Street Lane Detection**: Utilizes **Hough Transform** and **Transition Lines** for lane marking identification.  
+✅ **Monitoring Lane Changes**: Identifies vehicles violating priority rules within **3 meters** using **trajectory analysis** and **intersection detection**.
+
+#### 🚗 Vehicle Detection and Tracking
+- **YOLOv8n Model**: Detects a wide range of vehicles (cars, trucks, bikes).  
+- **SORT Algorithm**: Assigns unique IDs to track vehicles across frames.  
+
+<p align="center">  
+  <img src="Maseer_img/tracking.png" width="70%" alt="Detection Process">  
+</p>
+
+#### 🛣️ Street Lane Detection
+##### **Approach 1: Hough Transform Algorithm**
+- Used **Gaussian Blur + Canny Edge Detection** to process images.
+- **Hough Transform** was applied to detect lane markings.  
+- ❌ **Limitations**: Inconsistent results leading to **false positives & negatives**.
+
+<p align="center">  
+  <img src="Maseer_img/lane.png" width="70%" alt="Lane Detection using Hough Transform">  
+</p>
+
+##### **Approach 2: Transition Lines**
+- Defined **two static lines** on the video frames to mark lane boundaries.  
+- ✅ **More consistent** for detecting lane changes within **3 meters**.  
+- ❌ **Limitations**: Works best when the Dashcam remains **static**.
+
+<p align="center">  
+  <img src="Maseer_img/lane3.png" width="70%" alt="Transition Lines for Lane Detection">  
+</p>
+
+
+### 🔄 **Monitoring Lane Changes**  
+The system detects **sudden lane change violations** when vehicles switch lanes **too close (≤3 meters)** to the driver.  
+
+#### 📍 **Key Points Calculation**  
+Each vehicle’s movement is tracked using:  
+- **Left Point** → (x1, y2)  
+- **Right Point** → (x2, y2)  
+- **Center Point** → \( \left(\frac{x1 + x2}{2}, y2 \right) \)  
+
+<p align="center">  
+  <img src="Maseer_img/points.png" width="70%" alt="Left, Right, and Center Points">  
+</p>  
+
+---
+
+#### 📈 **Trajectory & Intersection Detection**  
+The system tracks **left, right, and center points** across frames to determine lane change violations.  
+
+A **violation is detected** if the trajectory intersects a **transition line**:  
+- **Step 1:** Check if **left or right point** crosses a transition line → 🚨 Possible violation.  
+- **Step 2:** Confirm if **center point** crosses the same line → ✅ Violation confirmed.  
+
+<p align="center">  
+  <img src="Maseer_img/points2.png" width="70%" alt="Violation Detection and Confirmation">  
+</p>  
+
+
+---
+
+### 📊 2️⃣ Data Extraction  
+Once a violation is detected, **relevant data** is extracted for reporting.
+
+✅ **License Plate Detection** → Identifies and extracts vehicle license plate details.  
+✅ **License Plate OCR** → Uses **EasyOCR** for text recognition and conversion.  
+✅ **Date & Time Extraction** → Extracts timestamp for accurate reporting.
+
+#### 🔢 License Plate Detection & OCR
+- Trained **YOLOv8n** on a **24,242-image dataset** for license plate detection.  
+- **EasyOCR** extracts the plate number from detected frames.  
+- Ensures **93% accuracy** for extracted license plate numbers.
+
+<p align="center">  
+  <img src="Maseer_img/plateA.png" width="70%" alt="License Plate Detection">  
+</p>
+
+#### ⏳ Date & Time Extraction
+- Uses **OpenCV** for region cropping and **EasyOCR** for text recognition.  
+- **Formatted extraction**: `YYYY-MM-DD` (date) and `HH:MM:SS` (time).  
+- Ensures **accurate violation reporting** with a **minimum confidence threshold of 40%**.
+
+<p align="center">  
+  <img src="Maseer_img/plateB.png" width="70%" alt="Date & Time Extraction">  
+</p>
+
 
 
 
