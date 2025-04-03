@@ -87,6 +87,8 @@
 </details>
 
 
+---
+
 ## 📌 Introduction  
 
 ### 🚀 Overview
@@ -118,6 +120,7 @@ In the figure above:
 - A violation occurs if the red vehicle **cuts too closely in front**, disrupting the blue vehicle’s passage and increasing accident risk.  
 
 
+---
 
 ## 🔍 Detection Process  
 
@@ -212,6 +215,7 @@ Once a violation is detected, **relevant data** is extracted for reporting.
   <img src="Maseer_img/plateB.png" width="70%" alt="Date & Time Extraction">  
 </p>
 
+---
 
 
 ## 🛠️ **System Testing**  
@@ -238,11 +242,13 @@ The system was tested on:
 📊 **Results Summary:**  
 📌 **Overall Accuracy:** **78%** for data extraction.  
 <p align="center">  
-  <img src="Maseer_img/plate_test.png" width="70%" alt="Data Extraction Testing Results">  
+  <img src="Maseer_img/plate_test.png" width="90%" alt="Data Extraction Testing Results">  
 </p>  
 
 
 
+---
+## 📄 Sample Output  
 
 
 
@@ -288,48 +294,6 @@ The system was tested on:
 
 
 
-🚀 **Key Technologies:**  
-- **Computer Vision** (OpenCV, image processing techniques)  
-- **Deep Learning** (YOLOv8, Faster R-CNN)  
-- **Python** (TensorFlow, PyTorch)  
-
----
-
-
----
-
-## 🛠 How Detection Works  
-Maseer follows a structured pipeline to detect traffic violations:  
-
-1. **Data Collection & Preprocessing**  
-   - Video frames are extracted and processed.  
-   - Objects (vehicles, traffic signals, lanes) are detected using deep learning models.  
-
-2. **Violation Detection Pipeline**  
-   - **Object Detection**: Identifies vehicles and traffic signals.  
-   - **Rule-Based Analysis**: Determines whether a violation occurs (e.g., car crosses red light).  
-
-3. **Deep Learning Models**  
-   - **YOLOv8**: Fast and efficient object detection.  
-   - **Faster R-CNN**: High-accuracy vehicle detection.  
-   - **Custom Models**: Trained for specific violation types.  
-
----
-
-## 📊 Models Used  
-
-| Model       | Purpose                     | Accuracy |
-|------------|----------------------------|----------|
-| YOLOv8     | Vehicle & signal detection  | 92%      |
-| Faster R-CNN | High-precision detection  | 95%      |
-| Custom CNN | Classification tasks        | 89%      |
-
-🚀 **Why YOLOv8?**  
-- Real-time performance  
-- High accuracy in traffic scenarios  
-- Efficient processing for large datasets  
-
----
 
 ## 📄 Generated Output  
 Maseer generates multiple output formats to report violations:  
