@@ -8,7 +8,7 @@
 - [Introduction](##introduction)  
 - [Detected Traffic Violations](#detected-traffic-violations)  
 - [Detection Process](#detection-process)  
-- [Models & Techniques Used](#models--techniques-used)  
+- [System Testing](#system-testing)  
 - [Sample Output](#sample-output)  
 - [Back-End Implementation](#back-end-implementation)  
 - [Installation & Setup](#installation--setup)  
@@ -211,6 +211,40 @@ Once a violation is detected, **relevant data** is extracted for reporting.
 <p align="center">  
   <img src="Maseer_img/plateB.png" width="70%" alt="Date & Time Extraction">  
 </p>
+
+
+
+## 🛠️ **System Testing**  
+To ensure the accuracy and reliability of **Maseer**, multiple testing phases were conducted on different system components, including **violation detection** and **data extraction**.  
+
+### 🚦 **Violation Detection Testing**  
+The system was tested on **71 videos** (4–85 seconds long), covering **day and night** conditions. The videos were categorized into:  
+- **Violations (V)**: Lane changes within **3 meters**.  
+- **Non-Violations (C)**: Lane changes **beyond 3 meters**.  
+- **Normal Driving (N)**: No lane change.  
+
+📊 **Results Summary:**  
+📌 **Achieved an accuracy of 95%**, even on low-quality videos (as low as **480p x 272p**).  
+<p align="center">  
+  <img src="Maseer_img/detect_test.png" width="90%" alt="Violation Detection Testing Results">  
+</p>  
+
+### 🔍 **Data Extraction Testing**  
+
+The system was tested on:  
+- **19 videos & 50 images** for license plate extraction.  
+- **60 videos** for date/time extraction.  
+
+📊 **Results Summary:**  
+📌 **Overall Accuracy:** **78%** for data extraction.  
+<p align="center">  
+  <img src="Maseer_img/plate_test.png" width="70%" alt="Data Extraction Testing Results">  
+</p>  
+
+
+
+
+
 
 
 
