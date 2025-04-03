@@ -124,7 +124,7 @@ In the figure above:
 The process of analyzing videos to identify and extract data related to sudden lane change violations comprises **two primary phases**, as illustrated below.
 
 <p align="center">  
-  <img src="Maseer_img/process.png" width="70%" alt="Detection Process">  
+  <img src="Maseer_img/process.png" width="90%" alt="Detection Process">  
 </p>
 
 ### 🚘 1️⃣ Violation Detection  
@@ -161,10 +161,10 @@ This phase involves:
 </p>
 
 
-### 🔄 **Monitoring Lane Changes**  
+#### 🔄 **Monitoring Lane Changes**  
 The system detects **sudden lane change violations** when vehicles switch lanes **too close (≤3 meters)** to the driver.  
 
-#### 📍 **Key Points Calculation**  
+##### 📍 **Key Points Calculation**  
 Each vehicle’s movement is tracked using:  
 - **Left Point** → (x1, y2)  
 - **Right Point** → (x2, y2)  
@@ -174,9 +174,8 @@ Each vehicle’s movement is tracked using:
   <img src="Maseer_img/points.png" width="70%" alt="Left, Right, and Center Points">  
 </p>  
 
----
 
-#### 📈 **Trajectory & Intersection Detection**  
+##### 📈 **Trajectory & Intersection Detection**  
 The system tracks **left, right, and center points** across frames to determine lane change violations.  
 
 A **violation is detected** if the trajectory intersects a **transition line**:  
@@ -187,8 +186,6 @@ A **violation is detected** if the trajectory intersects a **transition line**:
   <img src="Maseer_img/points2.png" width="70%" alt="Violation Detection and Confirmation">  
 </p>  
 
-
----
 
 ### 📊 2️⃣ Data Extraction  
 Once a violation is detected, **relevant data** is extracted for reporting.
