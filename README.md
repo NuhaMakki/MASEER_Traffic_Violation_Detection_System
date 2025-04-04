@@ -1,5 +1,4 @@
-# 🚦 Maseer (مسير) - 
-#    Intelligent Traffic Violation Detection System
+# 🚦 Maseer (مسير) - Intelligent Traffic Violation Detection System
 
 
 <p align="center"> <img src="Maseer_img/logo1.png" width="95%" alt="Benchmarking Analysis"> </p>
@@ -13,7 +12,7 @@
 - 📊 [Sample Output](#sample-output)  
 - ⚙️ [Installation & Setup](#installation--setup)  
 - 📂 [Directory Structure](#directory-structure)  
-- 🚀 [Future Enhancements](#challenges--future-enhancements)  
+- 🚀 [Future Enhancements](#-future-enhancements)  
 - 📬 [Connect](#connect)  
 
 
@@ -321,6 +320,14 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 
 ---
 
+## 🔮 Future Enhancements
+
+- 🛣️ Integrate street lane detection functionality  
+- 🎯 Enhance the accuracy and reliability of AI models  
+- 🔐 Improve system security to defend against internal and external threats  
+- 🚦 Extend detection to more traffic priority violations
+
+---
 
 
 ## 📬 Connect
