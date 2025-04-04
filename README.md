@@ -1,7 +1,10 @@
 # 🚦 Maseer (مسير) - Intelligent Traffic Violation Detection System
 
 
-<p align="center"> <img src="Maseer_img/logo1.png" width="95%" alt="Benchmarking Analysis"> </p>
+<p align="center"> <img src="Maseer_img/logo1.png" width="85%" alt="Benchmarking Analysis"> </p>
+
+
+<br><br>
 
 ## 📖 Table of Contents  
 
@@ -9,16 +12,17 @@
 - 🚦 [Traffic Violation Types](#traffic-violation-types)  
 - 🎯 [Output Preview](#output-Preview)
 - 📂 [Codebase Structure](#codebase-structure)
+- 🛠️ [Technologies Used](#technologies-used)
 - 🔍 [How It Works: Detection Pipeline](#how-it-works-detection-pipeline)
   - 🚘 [Phase 1: Violation Detection](#phase-1-violation-detection)
   - 📊 [Phase 2: Data Extraction](#phase-2-data-extraction)
 - 📈 [Testing & Evaluation](#testing--evaluation)
 - ⚙️ [Installation & Setup](#installation--setup)  
-- 🛠️ [Technologies Used](#technologies-used)
 - 🔮 [Future Enhancements](#future-enhancements)
 - 📬 [Connect](#connect)
 
 
+<br><br>
 
 ## 📌 Project Introduction
 
@@ -31,6 +35,7 @@
 ✅ **Facilitate data-driven reporting** → Assist victims of priority violations in filing accurate reports.  
 ✅ **Enhance traffic management** → Utilize advanced technology for precise and efficient violation monitoring.  
 
+<br><br>
 
 
 ## 🚦 Traffic Violation Types  
@@ -49,6 +54,7 @@ In the figure above:
 - The **🔴 red vehicle violates priority** if it switches lanes without waiting for the blue vehicle to pass.  
 - A violation occurs if the red vehicle **cuts too closely in front**, disrupting the blue vehicle’s passage and increasing accident risk.  
 
+<br><br>
 
 
 ## 🎯 Output Preview
@@ -105,6 +111,7 @@ In both cases:
   <img src="Maseer_img/Demo2.gif" width="95%" alt="mobile integration"> 
 </p>  
 
+<br><br>
 
 
 ## 📂 Codebase Structure
@@ -138,6 +145,39 @@ FastAPI route handlers:
 > ⚠️ **Note:** This is a backend-only implementation with integrated video processing and ML models. Requires a configured MySQL DB and a license plate detection model.
 
 
+<br><br>
+
+
+## 🛠️ Technologies Used
+
+- 🐍 **Python**, ⚡ **FastAPI** – Backend & API  
+- 👁️ **OpenCV**, 🧠 **YOLOv8 (Ultralytics)** – Object detection  
+- 🔤 **EasyOCR** – License plate recognition  
+- 📚 **PyTorch**, 🌐 **TensorFlow** – ML/DL models  
+- 🗄️ **MySQL**, 🛠️ **phpMyAdmin** – Database & management
+
+<!--
+## 🛠️ Technologies Used
+
+### 👁️ Computer Vision
+- 🧰 **OpenCV**  
+- 🎯 **YOLOv8 (Ultralytics)**  
+- 🔤 **EasyOCR**
+
+### 🧠 AI & Deep Learning
+- 🔬 **PyTorch**  
+- 🌐 **TensorFlow**
+
+### ⚙️ Backend & API
+- 🐍 **Python**  
+- ⚡ **FastAPI**
+
+### 🗄️ Database
+- 🛢️ **MySQL**  
+- 🛠️ **phpMyAdmin**
+-->
+
+<br><br>
 
 
 ## 🔍 How It Works: Detection Pipeline
@@ -234,6 +274,7 @@ Once a violation is detected, **relevant data** is extracted for reporting.
   <img src="Maseer_img/plateB.png" width="70%" alt="Date & Time Extraction">  
 </p>
 
+<br><br>
 
 
 ## 📈 **Testing & Evaluation**  
@@ -264,6 +305,7 @@ The system was tested on:
 </p>  
 
 
+<br><br>
 
 
 
@@ -335,39 +377,9 @@ This will start the FastAPI server, and you can access the API at `http://127.0.
 Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦🚗💨
 
 
+<br><br>
 
 
-## 🛠️ Technologies Used
-
-- 🐍 **Python**, ⚡ **FastAPI** – Backend & API  
-- 👁️ **OpenCV**, 🧠 **YOLOv8 (Ultralytics)** – Object detection  
-- 🔤 **EasyOCR** – License plate recognition  
-- 📚 **PyTorch**, 🌐 **TensorFlow** – ML/DL models  
-- 🗄️ **MySQL**, 🛠️ **phpMyAdmin** – Database & management
-
-<!--
-## 🛠️ Technologies Used
-
-### 👁️ Computer Vision
-- 🧰 **OpenCV**  
-- 🎯 **YOLOv8 (Ultralytics)**  
-- 🔤 **EasyOCR**
-
-### 🧠 AI & Deep Learning
-- 🔬 **PyTorch**  
-- 🌐 **TensorFlow**
-
-### ⚙️ Backend & API
-- 🐍 **Python**  
-- ⚡ **FastAPI**
-
-### 🗄️ Database
-- 🛢️ **MySQL**  
-- 🛠️ **phpMyAdmin**
--->
-
-
----
 
 ## 🔮 Future Enhancements
 
@@ -376,7 +388,7 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 - 🔐 Improve system security to defend against internal and external threats  
 - 🚦 Extend detection to more traffic priority violations
 
----
+<br><br>
 
 
 ## 📬 Connect
