@@ -159,7 +159,7 @@ The system was tested on **71 videos** (4–85 seconds long), covering **day and
 📊 **Results Summary:**  
 📌 **Achieved an accuracy of 95%**, even on low-quality videos (as low as **480p x 272p**).  
 <p align="center">  
-  <img src="Maseer_img/detect_test.png" width="90%" alt="Violation Detection Testing Results">  
+  <img src="Maseer_img/detect_test.png" width="90%" alt="Violation Detection Testing Results"> 
 </p>  
 
 ### 🔍 **Data Extraction Testing**  
@@ -177,10 +177,62 @@ The system was tested on:
 
 
 ---
-## 📄 Sample Output  
+
+## 🎯 Output Preview
+
+This GIF illustrates the system's input and output:
 
 
+### 🎥 Input
 
+#### Dashcam Video  
+- **Description:** The footage may contain a lane change violation.  
+- **Note:** While this is a short clip for demonstration, the system can process longer videos. The output video automatically trims to highlight only the violation segment.
+
+
+### 📤 Output
+
+For each detected violation, the system generates:
+
+#### 🎬 Trimmed Violation Video  
+- **Description:** Displays the violation with the offending vehicle highlighted using a bounding box.
+
+#### 🧾 Extracted Violation Data  
+The following data is extracted for each detected violation:
+
+1. **Total Violations Detected**
+2. **Details per Violation:**
+   - **Vehicle ID**
+   - **First & Last Frame:** When the vehicle first and last appears
+   - **Vehicle Information (with Confidence Scores):**
+     - **Plate Digits**
+     - **Plate Letters**
+     - **Date & Time** of the violation
+
+> 🎥
+<p align="center">  
+  <img src="Maseer_img/vio2.gif" width="95%" alt="Output Preview"> 
+</p>  
+---
+
+## 📱 System Integration with Mobile App
+
+This GIF demonstrates how the backend integrates with a mobile app UI in two different scenarios:
+
+- 📹 **Case 1:** A video containing a sudden lane change violation.  
+- 📹 **Case 2:** A video with no detected violations.
+
+In both cases:
+- Users can **upload dashcam footage** directly from the app.
+- The backend processes the video and returns results accordingly.
+- If violations are detected, **trimmed clips** and **detection metadata** are shown in the app interface.
+- If no violations are found, the user is notified accordingly.
+- Users can also browse history, receive alerts, and manage their account through the app.
+
+> 🎥
+<p align="center">  
+  <img src="Maseer_img/Demo2.gif" width="95%" alt="Output Preview"> 
+</p>  
 
 ---
 ## 📂 Directory Structure
