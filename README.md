@@ -61,6 +61,7 @@ In the figure above:
 
 
 ## 🎯 Output Preview
+<a name="output-preview"></a>
 
 This GIF illustrates the system's input and output:
 
@@ -118,6 +119,7 @@ In both cases:
 
 
 ## 📂 Codebase Structure
+<a name="codebase-structure"></a>
 
 This project includes **backend APIs, video analysis scripts, and a YOLOv8 model**.
 **Frontend UI, full database schema, and the license_plate_detection model are not included.**
@@ -152,6 +154,7 @@ FastAPI route handlers:
 
 
 ## 🛠️ Technologies Used
+<a name="technologies-used"></a>
 
 - 🐍 **Python**, ⚡ **FastAPI** – Backend & API  
 - 👁️ **OpenCV**, 🧠 **YOLOv8 (Ultralytics)** – Object detection  
@@ -184,6 +187,7 @@ FastAPI route handlers:
 
 
 ## 🔍 How It Works: Detection Pipeline
+<a name="how-it-works-detection-pipeline"></a>
 
 The process of analyzing videos to identify and extract data related to sudden lane change violations comprises **two primary phases**, as illustrated below.
 
@@ -193,6 +197,7 @@ The process of analyzing videos to identify and extract data related to sudden l
 
 > ### 🔍 Detection Pipeline Phases
 ### 🚘 Phase 1: Violation Detection  
+<a name="phase-1-violation-detection"></a>
 This phase involves:  
 ✅ **Vehicle Detection & Tracking**: Uses **YOLOv8n** for vehicle detection and **SORT** algorithm for tracking objects across frames.  
 ✅ **Street Lane Detection**: Utilizes **Hough Transform** and **Transition Lines** for lane marking identification.  
@@ -253,6 +258,8 @@ A **violation is detected** if the trajectory intersects a **transition line**:
 
 
 ### 📊 Phase 2: Data Extraction
+<a name="phase-2-data-extraction"></a>
+
 Once a violation is detected, **relevant data** is extracted for reporting.
 
 ✅ **License Plate Detection** → Identifies and extracts vehicle license plate details.  
@@ -281,6 +288,8 @@ Once a violation is detected, **relevant data** is extracted for reporting.
 
 
 ## 📈 **Testing & Evaluation**  
+<a name="testing--evaluation"></a>
+
 To ensure the accuracy and reliability of **Maseer**, multiple testing phases were conducted on different system components, including **violation detection** and **data extraction**.  
 
 ### 🚦 **Violation Detection Testing**  
@@ -313,6 +322,7 @@ The system was tested on:
 
 
 ## ⚙️ Installation & Setup
+<a name="installation--setup"></a>
 
 Follow these steps to set up and run the project:
 
@@ -385,6 +395,8 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 
 
 ## 🔮 Future Enhancements
+<a name="future-enhancements"></a>
+
 
 - 🛣️ Integrate street lane detection functionality  
 - 🎯 Enhance the accuracy and reliability of AI models  
@@ -395,6 +407,8 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 
 
 ## 📬 Connect
+<a name="connect"></a>
+
 If you have any questions or suggestions, feel free to connect!
 
 <div align="center">
