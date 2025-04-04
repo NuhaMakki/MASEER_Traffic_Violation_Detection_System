@@ -24,7 +24,8 @@
 
 <br><br>
 
-##📌[Project Introduction](#project-introduction)
+##📌Project Introduction
+<a name="project-introduction"></a>
 
 ### 🚀 Overview
 **Maseer** is an **AI-powered solution** designed to **automate** the detection and identification of **traffic priority violations** using video footage from regular drivers' **Dashcams**. By leveraging **computer vision** and **machine learning**, Maseer processes Dashcam recordings to **identify specific traffic violations**, addressing gaps in **traditional traffic monitoring systems**. This approach enhances **road safety** and **empowers drivers** to contribute to **law enforcement efforts**, streamlining **violation reporting** while protecting their **rights**.
@@ -39,6 +40,8 @@
 
 
 ## 🚦 Traffic Violation Types  
+<a name="traffic-violation-types"></a>
+
 Maseer focuses on detecting and identifying **traffic priority violations**, specifically **sudden lane change violations**. This violation occurs when a driver **fails to yield to a vehicle already in the target lane** while switching lanes, creating a hazardous situation. The violation is characterized by:
 
 🚗 **A vehicle (🔴 red) attempting to switch lanes without yielding to a vehicle (🔵 blue) already in that lane**, causing potential accidents.  
