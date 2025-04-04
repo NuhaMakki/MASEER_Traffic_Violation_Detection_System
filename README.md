@@ -108,7 +108,7 @@ In both cases:
 
 > 🎥
 <p align="center">  
-  <img src="Maseer_img/Demo2.gif" height="80%" width="auto" alt="mobile integration"> 
+  <img src="Maseer_img/Demo2.gif" height="40%" width="auto" alt="mobile integration"> 
 </p>  
 
 <br><br>
