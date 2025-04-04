@@ -36,10 +36,10 @@ async def sendPasswordRecoveryEmail(MailInfo:MailInfo):
 # Function to send verification email
 def send_verification_email(email: int, otp_code: str, email_Subject: str):
     # Set up SMTP server details
-    smtp_server = 'smtp.zoho.com'
+    smtp_server = 'smtp.xxxx.com'
     smtp_port = 465  # for SSL
-    sender_email = 'maseerproject@zohomail.com'
-    sender_password = 'Rahaf995500'
+    sender_email = 'xxxx@mail.com'
+    sender_password = 'xxxxxxx'
 
 
 
