@@ -89,7 +89,7 @@ The following data is extracted for each detected violation:
 
 > 🎥
 <p align="center">  
-  <img src="Maseer_img/vio2.gif" width="80%" style="max-width: 1200px;" alt="Output Preview"> 
+  <img src="Maseer_img/vio2.gif" width="70%" alt="Output Preview"> 
 </p>  
 
 ### 📱 Mobile App Integration
@@ -108,7 +108,7 @@ In both cases:
 
 > 🎥
 <p align="center">  
-  <img src="Maseer_img/Demo2.gif" width="80%" style="max-width: 600px;" alt="mobile integration"> 
+  <img src="Maseer_img/Demo2.gif" width="40%" style="max-width: 600px;" alt="mobile integration"> 
 </p>  
 
 <br><br>
