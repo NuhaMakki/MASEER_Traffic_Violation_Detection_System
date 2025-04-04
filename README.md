@@ -213,9 +213,8 @@ The following data is extracted for each detected violation:
 <p align="center">  
   <img src="Maseer_img/vio2.gif" width="95%" alt="Output Preview"> 
 </p>  
----
 
-## 📱 System Integration with Mobile App
+### 📱 System Integration with Mobile App
 
 This GIF demonstrates how the backend integrates with a mobile app UI in two different scenarios:
 
@@ -231,7 +230,7 @@ In both cases:
 
 > 🎥
 <p align="center">  
-  <img src="Maseer_img/Demo2.gif" width="95%" alt="Output Preview"> 
+  <img src="Maseer_img/Demo2.gif" width="95%" alt="mobile integration"> 
 </p>  
 
 ---
