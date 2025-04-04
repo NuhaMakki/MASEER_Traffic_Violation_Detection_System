@@ -350,15 +350,6 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 
 ---
 
-
-## 🛠️ Technologies Used
-- 🔍 **Computer Vision** (OpenCV, Ultralytics(YOLOv8), EasyOCR)  
-- 🧠 **AI & Machine Learning** (TensorFlow, PyTorch)  
-- 🏎️ **Video Processing** (FFmpeg)  
-- 🗄️ **Database** (MySQL, phpMyAdmin)  
-- 🌐 **Programming Languages & Frameworks** (Python, FastAPI)
-
-
 ## 🛠️ Technologies Used
 
 - 🐍 **Python**, ⚡ **FastAPI** – Backend & API  
@@ -369,12 +360,29 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 
 ## 🛠️ Technologies Used
 
-- **Backend & API** – 🐍 Python, ⚡ FastAPI  
-- **Object Detection** – 👁️ OpenCV, 🧠 YOLOv8 (Ultralytics)  
-- **License Plate Recognition** – 🔤 EasyOCR  
-- **ML/DL Models** – 📚 PyTorch, 🌐 TensorFlow  
-- **Video Processing** – 🎞️ FFmpeg  
-- **Database & Management** – 🗄️ MySQL, 🛠️ phpMyAdmin
+### 👁️ Computer Vision
+- OpenCV, Ultralytics (YOLOv8), EasyOCR
+
+### 🧠 AI & Deep Learning
+- PyTorch, TensorFlow
+
+### 🖥️ Backend & APIs
+- Python, FastAPI
+
+### 🗄️ Database
+- MySQL, phpMyAdmin
+
+---
+
+
+
+
+
+
+
+
+
+
 
 - [Introduction](#introduction)  
   - Overview of the project, its objectives, and key features.
