@@ -29,6 +29,7 @@
 
 ### 🚀 Overview
 **Maseer** is an **AI-powered solution** designed to **automate** the detection and identification of **traffic priority violations** using video footage from regular drivers' **Dashcams**. By leveraging **computer vision** and **machine learning**, Maseer processes Dashcam recordings to **identify specific traffic violations**, addressing gaps in **traditional traffic monitoring systems**. This approach enhances **road safety** and **empowers drivers** to contribute to **law enforcement efforts**, streamlining **violation reporting** while protecting their **rights**.
+
 The project was developed as a graduation project for the Computer Science program at King Abdulaziz University (KAU).
 
 ### 🎯 Objectives
@@ -428,6 +429,8 @@ If you have any questions or suggestions, feel free to connect!
 
 
 <br>
+
+
 ---
 📌 Developed as a **graduation project** for the **Computer Science** program at **KAU**
 
