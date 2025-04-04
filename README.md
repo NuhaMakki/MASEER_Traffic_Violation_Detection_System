@@ -348,7 +348,7 @@ The sort module needs to be downloaded from [this repository](https://github.com
 - Add your trained model **license_plate_detector.pt** inside the `models` folder.
 
 ### 5️⃣ Configure Database Connection
-Modify `database.py` if needed:
+Modify `database.py`  to match your MySQL configuration if needed:
 ```python
 def connect_to_mysql():
     # Database configuration details
