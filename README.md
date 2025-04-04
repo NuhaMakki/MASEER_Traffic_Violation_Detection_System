@@ -5,20 +5,22 @@
 
 ## 📖 Table of Contents  
 
-- 📌 [Introduction](#introduction)  
-- 🚦 [Detected Traffic Violations](#detected-traffic-violations)  
-- 🔍 [Detection Process](#detection-process)
-- 📈 [Testing & Results](#testing--results)  
-- 📊 [Sample Output](#sample-output)  
+- 📌 [Project Introduction](#project-introduction)  
+- 🚦 [Traffic Violation Types](#traffic-violation-types)  
+- 🎯 [Output Preview](#output-Preview)
+- 📂 [Codebase Structure](#codebase-structure)
+- 🔍 [How It Works: Detection Pipeline](#how-it-works-detection-pipeline)
+  - 🚘 [Phase 1: Violation Detection](#phase-1-violation-detection)
+  - 📊 [Phase 2: Data Extraction](#phase-2-data-extraction)
+- 📈 [Testing & Evaluation](#testing--evaluation)
 - ⚙️ [Installation & Setup](#installation--setup)  
-- 📂 [Directory Structure](#directory-structure)  
-- 🚀 [Future Enhancements](#-future-enhancements)  
-- 📬 [Connect](#connect)  
+- 🛠️ [Technologies Used](#technologies-used)
+- 🔮 [Future Enhancements](#future-enhancements)
+- 📬 [Connect](#connect)
 
 
----
 
-## 📌 Introduction  
+## 📌 Project Introduction
 
 ### 🚀 Overview
 **Maseer** is an **AI-powered solution** designed to **automate** the detection and identification of **traffic priority violations** using video footage from regular drivers' **Dashcams**. By leveraging **computer vision** and **machine learning**, Maseer processes Dashcam recordings to **identify specific traffic violations**, addressing gaps in **traditional traffic monitoring systems**. This approach enhances **road safety** and **empowers drivers** to contribute to **law enforcement efforts**, streamlining **violation reporting** while protecting their **rights**.
@@ -30,9 +32,8 @@
 ✅ **Enhance traffic management** → Utilize advanced technology for precise and efficient violation monitoring.  
 
 
----
 
-## 🚦 Detected Traffic Violations  
+## 🚦 Traffic Violation Types  
 Maseer focuses on detecting and identifying **traffic priority violations**, specifically **sudden lane change violations**. This violation occurs when a driver **fails to yield to a vehicle already in the target lane** while switching lanes, creating a hazardous situation. The violation is characterized by:
 
 🚗 **A vehicle (🔴 red) attempting to switch lanes without yielding to a vehicle (🔵 blue) already in that lane**, causing potential accidents.  
@@ -49,9 +50,97 @@ In the figure above:
 - A violation occurs if the red vehicle **cuts too closely in front**, disrupting the blue vehicle’s passage and increasing accident risk.  
 
 
----
 
-## 🔍 Detection Process  
+## 🎯 Output Preview
+
+This GIF illustrates the system's input and output:
+
+### 🎥 Input
+
+#### Dashcam Video  
+- **Description:** The footage may contain a lane change violation.  
+- **Note:** While this is a short clip for demonstration, the system can process longer videos. The output video automatically trims to highlight only the violation segment.
+
+
+### 📤 Output
+
+For each detected violation, the system generates:
+
+#### 🎬 Trimmed Violation Video  
+- **Description:** Displays the violation with the offending vehicle highlighted using a bounding box.
+
+#### 🧾 Extracted Violation Data  
+The following data is extracted for each detected violation:
+
+1. **Total Violations Detected**
+2. **Details per Violation:**
+   - **Vehicle ID**
+   - **First & Last Frame:** When the vehicle first and last appears
+   - **Vehicle Information (with Confidence Scores):**
+     - **Plate Digits**
+     - **Plate Letters**
+     - **Date & Time** of the violation
+
+> 🎥
+<p align="center">  
+  <img src="Maseer_img/vio2.gif" width="95%" alt="Output Preview"> 
+</p>  
+
+### 📱 Mobile App Integration
+
+This GIF demonstrates how the backend integrates with a mobile app UI in two different scenarios:
+
+- 📹 **Case 1:** A video containing a sudden lane change violation.  
+- 📹 **Case 2:** A video with no detected violations.
+
+In both cases:
+- Users can **upload dashcam footage** directly from the app.
+- The backend processes the video and returns results accordingly.
+- If violations are detected, **trimmed clips** and **detection metadata** are shown in the app interface.
+- If no violations are found, the user is notified accordingly.
+- Users can also browse history, receive alerts, and manage their account through the app.
+
+> 🎥
+<p align="center">  
+  <img src="Maseer_img/Demo2.gif" width="95%" alt="mobile integration"> 
+</p>  
+
+
+
+## 📂 Codebase Structure
+
+This project includes **backend APIs, video analysis scripts, and a YOLOv8 model**.
+**Frontend UI, full database schema, and the license_plate_detection model are not included.**
+
+### 🧠 `analysing/`
+Computer vision scripts:
+- `violationDetect.py` – Traffic violation detection.
+- `dataExtract.py` – Data Extracting from video.
+
+### 📦 `models/`
+AI model files:
+- `yolov8n.pt` – YOLOv8 object detector.
+- *(Your custom `license_plate_detector.pt` goes here — not included in the repository)*
+
+### 🔌 `routers/`
+FastAPI route handlers:
+- `signup.py`, `login.py`, `userdata.py`, `updatePhone.py`, `updatePassword.py`
+- `deleteAccount.py`, `deleteOneReport.py`, `historyList.py`
+- `report.py`, `uploadVideo.py`, `sendEmail.py`, `PasswordRecover.py`
+
+### 📄 Root Files
+- `main.py` – FastAPI app entry point.
+- `database.py` – MySQL config and queries.
+- `models.py` – Pydantic models for request/response validation.
+- `requirements.txt` – Python dependencies.
+- `README.md` – Project documentation.
+
+> ⚠️ **Note:** This is a backend-only implementation with integrated video processing and ML models. Requires a configured MySQL DB and a license plate detection model.
+
+
+
+
+## 🔍 How It Works: Detection Pipeline
 
 The process of analyzing videos to identify and extract data related to sudden lane change violations comprises **two primary phases**, as illustrated below.
 
@@ -59,7 +148,8 @@ The process of analyzing videos to identify and extract data related to sudden l
   <img src="Maseer_img/process.png" width="90%" alt="Detection Process">  
 </p>
 
-### 🚘 1️⃣ Violation Detection  
+> ### 🔍 Detection Pipeline Phases
+### 🚘 Phase 1: Violation Detection  
 This phase involves:  
 ✅ **Vehicle Detection & Tracking**: Uses **YOLOv8n** for vehicle detection and **SORT** algorithm for tracking objects across frames.  
 ✅ **Street Lane Detection**: Utilizes **Hough Transform** and **Transition Lines** for lane marking identification.  
@@ -119,7 +209,7 @@ A **violation is detected** if the trajectory intersects a **transition line**:
 </p>  
 
 
-### 📊 2️⃣ Data Extraction  
+### 📊 Phase 2: Data Extraction
 Once a violation is detected, **relevant data** is extracted for reporting.
 
 ✅ **License Plate Detection** → Identifies and extracts vehicle license plate details.  
@@ -144,10 +234,9 @@ Once a violation is detected, **relevant data** is extracted for reporting.
   <img src="Maseer_img/plateB.png" width="70%" alt="Date & Time Extraction">  
 </p>
 
----
 
 
-## 📈 **Testing & Results**  
+## 📈 **Testing & Evaluation**  
 To ensure the accuracy and reliability of **Maseer**, multiple testing phases were conducted on different system components, including **violation detection** and **data extraction**.  
 
 ### 🚦 **Violation Detection Testing**  
@@ -176,97 +265,7 @@ The system was tested on:
 
 
 
----
 
-## 🎯 Output Preview
-
-This GIF illustrates the system's input and output:
-
-
-### 🎥 Input
-
-#### Dashcam Video  
-- **Description:** The footage may contain a lane change violation.  
-- **Note:** While this is a short clip for demonstration, the system can process longer videos. The output video automatically trims to highlight only the violation segment.
-
-
-### 📤 Output
-
-For each detected violation, the system generates:
-
-#### 🎬 Trimmed Violation Video  
-- **Description:** Displays the violation with the offending vehicle highlighted using a bounding box.
-
-#### 🧾 Extracted Violation Data  
-The following data is extracted for each detected violation:
-
-1. **Total Violations Detected**
-2. **Details per Violation:**
-   - **Vehicle ID**
-   - **First & Last Frame:** When the vehicle first and last appears
-   - **Vehicle Information (with Confidence Scores):**
-     - **Plate Digits**
-     - **Plate Letters**
-     - **Date & Time** of the violation
-
-> 🎥
-<p align="center">  
-  <img src="Maseer_img/vio2.gif" width="95%" alt="Output Preview"> 
-</p>  
-
-### 📱 System Integration with Mobile App
-
-This GIF demonstrates how the backend integrates with a mobile app UI in two different scenarios:
-
-- 📹 **Case 1:** A video containing a sudden lane change violation.  
-- 📹 **Case 2:** A video with no detected violations.
-
-In both cases:
-- Users can **upload dashcam footage** directly from the app.
-- The backend processes the video and returns results accordingly.
-- If violations are detected, **trimmed clips** and **detection metadata** are shown in the app interface.
-- If no violations are found, the user is notified accordingly.
-- Users can also browse history, receive alerts, and manage their account through the app.
-
-> 🎥
-<p align="center">  
-  <img src="Maseer_img/Demo2.gif" width="95%" alt="mobile integration"> 
-</p>  
-
----
-## 📂 Directory Structure
-
-This project includes **backend APIs, video analysis scripts, and a YOLOv8 model**.
-**Frontend UI, full database schema, and the license_plate_detection model are not included.**
-
-### 🧠 `analysing/`
-Computer vision scripts:
-- `violationDetect.py` – Traffic violation detection.
-- `dataExtract.py` – Data Extracting from video.
-
-### 📦 `models/`
-AI model files:
-- `yolov8n.pt` – YOLOv8 object detector.
-- *(Your custom `license_plate_detector.pt` goes here — not included in the repository)*
-
-### 🔌 `routers/`
-FastAPI route handlers:
-- `signup.py`, `login.py`, `userdata.py`, `updatePhone.py`, `updatePassword.py`
-- `deleteAccount.py`, `deleteOneReport.py`, `historyList.py`
-- `report.py`, `uploadVideo.py`, `sendEmail.py`, `PasswordRecover.py`
-
-### 📄 Root Files
-- `main.py` – FastAPI app entry point.
-- `database.py` – MySQL config and queries.
-- `models.py` – Pydantic models for request/response validation.
-- `requirements.txt` – Python dependencies.
-- `README.md` – Project documentation.
-
-> ⚠️ **Note:** This is a backend-only implementation with integrated video processing and ML models. Requires a configured MySQL DB and a license plate detection model.
-
-
-
----
 
 ## ⚙️ Installation & Setup
 
@@ -337,7 +336,6 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 
 
 
----
 
 ## 🛠️ Technologies Used
 
