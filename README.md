@@ -24,8 +24,8 @@
 
 <br><br>
 
-##📌Project Introduction
 <a name="project-introduction"></a>
+##📌Project Introduction
 
 ### 🚀 Overview
 **Maseer** is an **AI-powered solution** designed to **automate** the detection and identification of **traffic priority violations** using video footage from regular drivers' **Dashcams**. By leveraging **computer vision** and **machine learning**, Maseer processes Dashcam recordings to **identify specific traffic violations**, addressing gaps in **traditional traffic monitoring systems**. This approach enhances **road safety** and **empowers drivers** to contribute to **law enforcement efforts**, streamlining **violation reporting** while protecting their **rights**.
@@ -39,8 +39,8 @@
 <br><br>
 
 
-## 🚦 Traffic Violation Types  
 <a name="traffic-violation-types"></a>
+## 🚦 Traffic Violation Types  
 
 Maseer focuses on detecting and identifying **traffic priority violations**, specifically **sudden lane change violations**. This violation occurs when a driver **fails to yield to a vehicle already in the target lane** while switching lanes, creating a hazardous situation. The violation is characterized by:
 
@@ -59,9 +59,8 @@ In the figure above:
 
 <br><br>
 
-
-## 🎯 Output Preview
 <a name="output-preview"></a>
+## 🎯 Output Preview
 
 This GIF illustrates the system's input and output:
 
@@ -117,9 +116,8 @@ In both cases:
 
 <br><br>
 
-
-## 📂 Codebase Structure
 <a name="codebase-structure"></a>
+## 📂 Codebase Structure
 
 This project includes **backend APIs, video analysis scripts, and a YOLOv8 model**.
 **Frontend UI, full database schema, and the license_plate_detection model are not included.**
@@ -152,9 +150,8 @@ FastAPI route handlers:
 
 <br><br>
 
-
-## 🛠️ Technologies Used
 <a name="technologies-used"></a>
+## 🛠️ Technologies Used
 
 - 🐍 **Python**, ⚡ **FastAPI** – Backend & API  
 - 👁️ **OpenCV**, 🧠 **YOLOv8 (Ultralytics)** – Object detection  
@@ -186,8 +183,8 @@ FastAPI route handlers:
 <br><br>
 
 
-## 🔍 How It Works: Detection Pipeline
 <a name="how-it-works-detection-pipeline"></a>
+## 🔍 How It Works: Detection Pipeline
 
 The process of analyzing videos to identify and extract data related to sudden lane change violations comprises **two primary phases**, as illustrated below.
 
@@ -196,8 +193,8 @@ The process of analyzing videos to identify and extract data related to sudden l
 </p>
 
 > ### 🔍 Detection Pipeline Phases
-### 🚘 Phase 1: Violation Detection  
 <a name="phase-1-violation-detection"></a>
+### 🚘 Phase 1: Violation Detection  
 This phase involves:  
 ✅ **Vehicle Detection & Tracking**: Uses **YOLOv8n** for vehicle detection and **SORT** algorithm for tracking objects across frames.  
 ✅ **Street Lane Detection**: Utilizes **Hough Transform** and **Transition Lines** for lane marking identification.  
@@ -257,8 +254,8 @@ A **violation is detected** if the trajectory intersects a **transition line**:
 </p>  
 
 
-### 📊 Phase 2: Data Extraction
 <a name="phase-2-data-extraction"></a>
+### 📊 Phase 2: Data Extraction
 
 Once a violation is detected, **relevant data** is extracted for reporting.
 
@@ -287,8 +284,8 @@ Once a violation is detected, **relevant data** is extracted for reporting.
 <br><br>
 
 
-## 📈 **Testing & Evaluation**  
 <a name="testing--evaluation"></a>
+## 📈 **Testing & Evaluation**  
 
 To ensure the accuracy and reliability of **Maseer**, multiple testing phases were conducted on different system components, including **violation detection** and **data extraction**.  
 
@@ -321,8 +318,8 @@ The system was tested on:
 
 
 
-## ⚙️ Installation & Setup
 <a name="installation--setup"></a>
+## ⚙️ Installation & Setup
 
 Follow these steps to set up and run the project:
 
@@ -394,8 +391,8 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 
 
 
-## 🔮 Future Enhancements
 <a name="future-enhancements"></a>
+## 🔮 Future Enhancements
 
 
 - 🛣️ Integrate street lane detection functionality  
@@ -406,8 +403,8 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 <br><br>
 
 
-## 📬 Connect
 <a name="connect"></a>
+## 📬 Connect
 
 If you have any questions or suggestions, feel free to connect!
 
