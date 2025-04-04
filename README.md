@@ -394,6 +394,29 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 - 🛢️ **MySQL** – Relational database  
 - 🛠️ **phpMyAdmin** – Database management UI
 
+
+
+
+
+## 🛠️ Technologies Used
+
+### 👁️ Computer Vision
+- 🧰 **OpenCV**  
+- 🎯 **YOLOv8 (Ultralytics)**  
+- 🔤 **EasyOCR**
+
+### 🧠 AI & Deep Learning
+- 🔬 **PyTorch**  
+- 🌐 **TensorFlow**
+
+### ⚙️ Backend & API
+- 🐍 **Python**  
+- ⚡ **FastAPI**
+
+### 🗄️ Database
+- 🛢️ **MySQL**  
+- 🛠️ **phpMyAdmin**
+
 ---
 
 
