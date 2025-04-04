@@ -372,6 +372,28 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 ### 🗄️ Database
 - MySQL, phpMyAdmin
 
+
+
+
+## 🛠️ Technologies Used
+
+### 👁️💡 Computer Vision & Detection
+- 🧰 **OpenCV** – Image processing  
+- 🎯 **Ultralytics YOLOv8** – Object detection  
+- 🔤 **EasyOCR** – License plate recognition
+
+### 🧠📚 AI & Deep Learning
+- 🔬 **PyTorch** – Model development & training  
+- 🌐 **TensorFlow** – Deep learning framework
+
+### 🐍⚡ Backend & API Development
+- 🐍 **Python** – Core programming language  
+- ⚡ **FastAPI** – Web framework for building APIs
+
+### 🗄️🧑‍💻 Database & Management
+- 🛢️ **MySQL** – Relational database  
+- 🛠️ **phpMyAdmin** – Database management UI
+
 ---
 
 
