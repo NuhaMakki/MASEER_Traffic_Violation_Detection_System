@@ -10,7 +10,7 @@
 
 - 📌 [Project Introduction](#project-introduction)  
 - 🚦 [Traffic Violation Types](#traffic-violation-types)  
-- 🎯 [Output Preview](#output-Preview)
+- 🎯 [Output Preview](#output-preview)
 - 📂 [Codebase Structure](#codebase-structure)
 - 🛠️ [Technologies Used](#technologies-used)
 - 🔍 [How It Works: Detection Pipeline](#how-it-works-detection-pipeline)
