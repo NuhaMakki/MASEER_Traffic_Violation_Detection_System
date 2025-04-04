@@ -246,7 +246,109 @@ The system was tested on:
 
 
 
+---
+## 📂 Directory Structure
 
+This project includes **backend APIs, video analysis scripts, and a YOLOv8 model**.
+**Frontend UI, full database schema, and the license_plate_detection model are not included.**
+
+### 🧠 `analysing/`
+Computer vision scripts:
+- `violationDetect.py` – Traffic violation detection.
+- `dataExtract.py` – Data Extracting from video.
+
+### 📦 `models/`
+AI model files:
+- `yolov8n.pt` – YOLOv8 object detector.
+- *(Your custom `license_plate_detector.pt` goes here — not included in the repository)*
+
+### 🔌 `routers/`
+FastAPI route handlers:
+- `signup.py`, `login.py`, `userdata.py`, `updatePhone.py`, `updatePassword.py`
+- `deleteAccount.py`, `deleteOneReport.py`, `historyList.py`
+- `report.py`, `uploadVideo.py`, `sendEmail.py`, `PasswordRecover.py`
+
+### 📄 Root Files
+- `main.py` – FastAPI app entry point.
+- `database.py` – MySQL config and queries.
+- `models.py` – Pydantic models for request/response validation.
+- `requirements.txt` – Python dependencies.
+- `README.md` – Project documentation.
+
+> ⚠️ **Note:** This is a backend-only implementation with integrated video processing and ML models. Requires a configured MySQL DB and a license plate detection model.
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to set up and run the project:
+
+### 1️⃣ Clone the Repository
+```bash
+ git clone https://github.com/NuhaMakki/MASEER_Traffic_Violation_Detection_System.git
+ cd MASEER_Traffic_Violation_Detection_System
+```
+
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Clone Sort Module
+The sort module needs to be downloaded from [this repository](https://github.com/abewley/sort)
+```bash
+ cd analysing
+ git clone https://github.com/abewley/sort
+ cd sort
+ pip install -r requirements.txt
+```
+### 4️⃣ Place Required Files
+- Add your trained model **license_plate_detector.pt** inside the `models` folder.
+
+### 5️⃣ Configure Database Connection
+Modify `database.py` if needed:
+```python
+def connect_to_mysql():
+    # Database configuration details
+    config = {
+        'host': 'localhost',
+        'database': 'maseerdb',
+        'user' : 'root',
+        'password' : ''
+    }
+```
+
+### 6️⃣ Configure Email Sending
+Edit `routers/sendEmail.py` and update the following SMTP settings:
+```python
+# Function to send verification email
+def send_verification_email(email: int, otp_code: str, email_Subject: str):
+    # Set up SMTP server details
+    smtp_server = 'smtp.xxxx.com'
+    smtp_port = 465  # for SSL
+    sender_email = 'xxxx@mail.com'
+    sender_password = 'xxxxxxx'
+```
+Replace the placeholder values with your actual SMTP credentials.
+
+### 7️⃣ Run the Project
+```bash
+uvicorn main:app --reload
+```
+
+This will start the FastAPI server, and you can access the API at `http://127.0.0.1:8000/`.
+
+### 🎯 Additional Notes
+- Ensure MySQL is running before launching the project.
+- Use a virtual environment to manage dependencies.
+- Modify `.env` or `config.py` (if applicable) for sensitive configurations.
+- Check `logs/` for debugging issues if needed.
+
+Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦🚗💨
+
+---
 
 
 ## 🛠️ Technologies Used
