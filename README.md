@@ -94,7 +94,7 @@
 ✅ **Enhance traffic management** → Utilize advanced technology for precise and efficient violation monitoring.  
 
 
-
+---
 
 ## 🚦 Detected Traffic Violations  
 Maseer focuses on detecting and identifying **traffic priority violations**, specifically **sudden lane change violations**. This violation occurs when a driver **fails to yield to a vehicle already in the target lane** while switching lanes, creating a hazardous situation. The violation is characterized by:
@@ -352,13 +352,29 @@ Now you’re ready to use **MASEER Traffic Violation Detection System**! 🚦�
 
 
 ## 🛠️ Technologies Used
-- 🔍 **Computer Vision** (OpenCV, YOLO)  
-- 🧠 **Machine Learning** (TensorFlow, PyTorch)  
+- 🔍 **Computer Vision** (OpenCV, Ultralytics(YOLOv8), EasyOCR)  
+- 🧠 **AI & Machine Learning** (TensorFlow, PyTorch)  
 - 🏎️ **Video Processing** (FFmpeg)  
-- 🗄️ **Database** (MySQL, Firebase)  
-- 🌐 **Web Framework** (Flask, FastAPI)
+- 🗄️ **Database** (MySQL, phpMyAdmin)  
+- 🌐 **Programming Languages & Frameworks** (Python, FastAPI)
 
 
+## 🛠️ Technologies Used
+
+- 🐍 **Python**, ⚡ **FastAPI** – Backend & API  
+- 👁️ **OpenCV**, 🧠 **YOLOv8 (Ultralytics)** – Object detection  
+- 🔤 **EasyOCR** – License plate recognition  
+- 📚 **PyTorch**, 🌐 **TensorFlow** – ML/DL models  
+- 🗄️ **MySQL**, 🛠️ **phpMyAdmin** – Database & management
+
+## 🛠️ Technologies Used
+
+- **Backend & API** – 🐍 Python, ⚡ FastAPI  
+- **Object Detection** – 👁️ OpenCV, 🧠 YOLOv8 (Ultralytics)  
+- **License Plate Recognition** – 🔤 EasyOCR  
+- **ML/DL Models** – 📚 PyTorch, 🌐 TensorFlow  
+- **Video Processing** – 🎞️ FFmpeg  
+- **Database & Management** – 🗄️ MySQL, 🛠️ phpMyAdmin
 
 - [Introduction](#introduction)  
   - Overview of the project, its objectives, and key features.
